@@ -4,14 +4,16 @@ from sam3.model_builder import build_sam3_image_model
 from sam3.model.sam3_image_processor import Sam3Processor
 
 # 装载模型
-model = build_sam3_image_model(checkpoint_path="./models/facebook/sam3/sam3.pt")
+model = build_sam3_image_model(
+    checkpoint_path="./models/facebook/sam3/sam3.pt")
 processor = Sam3Processor(model)
 # 装载图片
 image = Image.open("image01.jpg")
 inference_state = processor.set_image(image)
 # 分割图片
-output = processor.set_text_prompt(state=inference_state, 
-                                   prompt="Segmenting soccer players in the image")
+output = processor.set_text_prompt(
+    state=inference_state, 
+    prompt="Segmenting soccer players in the image")
 print(output)
 
 ######### 处理分割结果 ########
