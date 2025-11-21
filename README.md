@@ -1,4 +1,4 @@
-# Facebook SAM 3 样例
+# Meta SAM 3 样例
 
 ## 一、环境安装
 
