@@ -29,9 +29,14 @@ git checkout 84cc43b
 pip install -e . -i https://pypi.mirrors.ustc.edu.cn/simple
 # 安装其他依赖库
 pip install requests einops decord pycocotools psutil matplotlib \
+opencv-python pandas scikit-image scikit-learn \
 -i https://pypi.mirrors.ustc.edu.cn/simple
 # 校验PyTorch是否正确安装
 python -c "import torch; print(torch.cuda.is_available())"
+# 如果为False，则重装PyTorch(一般出现在Windows上)
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
+# Windows
+pip install -U "triton-windows<3.6" -i https://pypi.mirrors.ustc.edu.cn/simple
 # 切换回上一级目录
 cd ..
 ```
@@ -52,6 +57,14 @@ python model_download2.py --repo_id facebook/sam3
 ```shell
 python 01_image_segment.py
 ```
+
+### 2、优化提示词
+
+```shell
+python 02_image_segment.py
+```
+
+
 
 ## 作者其他作品
 
