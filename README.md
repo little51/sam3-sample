@@ -64,7 +64,17 @@ python 01_image_segment.py
 python 02_image_segment.py
 ```
 
+### 3、视频分割（简单）
 
+```shell
+python 03_video_segment.py
+```
+
+### 4、视频分割（完整）
+
+```shell
+python 04_video_segment.py
+```
 
 ## 作者其他作品
 
