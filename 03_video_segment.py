@@ -16,7 +16,7 @@ response = video_predictor.handle_request(
         type="add_prompt",
         session_id=response["session_id"],
         frame_index=0, 
-        text="<YOUR_TEXT_PROMPT>",
+        text="kids",
     )
 )
 output = response["outputs"]
