@@ -4,6 +4,7 @@ from sam3.model_builder import build_sam3_image_model
 from sam3.model.sam3_image_processor import Sam3Processor
 from sam3.visualization_utils import draw_box_on_image
 import numpy as np
+import time
 
 # 装载模型
 model = build_sam3_image_model(
@@ -13,10 +14,13 @@ processor = Sam3Processor(model)
 # 处理图片
 image = Image.open("image01.jpg")
 inference_state = processor.set_image(image)
+start_time = time.time()
 output = processor.set_text_prompt(
     state=inference_state, 
     prompt="Segment the soccer players in yellow jerseys in the image")
-
+end_time = time.time()
+execution_time_ms = (end_time - start_time) * 1000
+print(f"检测用时: {execution_time_ms:.2f} 毫秒")
 print(f"检测到 {len(output['boxes'])} 个对象")
 
 def save_boxes(image_path, output_path, output):
