@@ -76,6 +76,14 @@ python 03_video_segment.py
 python 04_video_segment.py
 ```
 
+### 5、MobileSAM
+
+```shell
+python 05_mobile_sam.py
+```
+
+
+
 ## 作者其他作品
 
 《大模型项目实战：多领域智能应用开发》配套资源：[https://github.com/little51/llm-dev](https://github.com/little51/llm-dev)
