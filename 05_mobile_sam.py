@@ -2,10 +2,15 @@
 # https://github.com/ultralytics/assets/releases/download/v8.3.0/mobile_sam.pt
 # pip install ultralytics
 from ultralytics.data.annotator import auto_annotate
+import time
 
+start_time = time.time()
 auto_annotate(data="./images", 
               det_model="./models/yolo11x.pt", 
               sam_model="./models/mobile_sam.pt")
+end_time = time.time()
+execution_time_ms = (end_time - start_time) * 1000
+print(f"检测用时: {execution_time_ms:.2f} 毫秒")
 
 import cv2
 from ultralytics import YOLO
