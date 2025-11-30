@@ -31,7 +31,7 @@ llm_config["api_key"] = LLM_API_KEY
 llm_config["name"] = model
 
 if llm_config["provider"] == "vllm":
-    LLM_SERVER_URL = "http://0.0.0.0:8001/v1"
+    LLM_SERVER_URL = "http://0.0.0.0:8000/v1"
 else:
     LLM_SERVER_URL = llm_config["base_url"]
 
