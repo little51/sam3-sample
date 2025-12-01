@@ -209,3 +209,4 @@ __marimo__/
 /sam3
 /*.mp4
 /images_auto_annotate_labels
+/yolo11x.pt
