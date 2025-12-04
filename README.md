@@ -82,6 +82,28 @@ python 04_video_segment.py
 python 05_mobile_sam.py
 ```
 
+### 6、FastSAM
+
+```shell
+python 06_fast_sam.py
+```
+
+### 7、SAM Agent
+
+```shell
+# 运行Qwen/Qwen3-VL-2B-Thinking模型
+HF_ENDPOINT=https://hf-mirror.com CUDA_VISIBLE_DEVICES=1 \
+vllm serve Qwen/Qwen3-VL-2B-Thinking \
+--max-model-len 32000 --disable-log-stats --enforce-eager \
+--host 0.0.0.0 --port 8000 --served-model-name Qwen/Qwen3-VL-2B-Thinking \
+--dtype=half --gpu-memory-utilization 0.9
+# 安装其他依赖库
+pip install ipython openai -i https://pypi.mirrors.ustc.edu.cn/simple
+# 运行程序
+python 08_sam3_agent.py
+
+```
+
 
 
 ## 作者其他作品
