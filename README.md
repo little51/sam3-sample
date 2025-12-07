@@ -152,3 +152,8 @@ CUDA_VISIBLE_DEVICES=0 HF_ENDPOINT=https://hf-mirror.com python 09_sam3_body.py
 DINOv3训练示例：[https://github.com/little51/dinov3-train](https://github.com/little51/dinov3-train)
 DINOv3其他示例：[https://github.com/little51/dinov3-samples](https://github.com/little51/dinov3-samples)
 
+## 作者新书《大模型项目实战：多领域智能应用》和《大模型项目实战：Agent开发与应用》
+
+![图书](https://gitclone.com/download1/llm-dev/llm-dev.png)
+![图书](https://gitclone.com/download1/ai-agent/agent-dev1.png)
+
