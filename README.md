@@ -104,6 +104,45 @@ python 08_sam3_agent.py
 
 ```
 
+## 四、SAM_3D_BODY
+
+### 1、安装基础环境
+
+```shell
+# 创建虚拟环境
+conda create -n sam_3d_body python=3.11 -y
+# 激活虚拟环境
+conda activate sam_3d_body
+# 安装基础库
+pip install pytorch-lightning pyrender opencv-python yacs scikit-image einops timm dill pandas rich hydra-core hydra-submitit-launcher hydra-colorlog pyrootutils webdataset chump networkx==3.2.1 roma joblib seaborn wandb appdirs appnope ffmpeg cython jsonlines pytest xtcocotools loguru optree fvcore black pycocotools tensorboard huggingface_hub -i https://pypi.mirrors.ustc.edu.cn/simple
+# 安装PyTorch
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
+```
+
+### 2、安装Detectron2
+
+```shell
+pip install git+https://github.com/facebookresearch/detectron2.git@a1ce2f9 --no-build-isolation --no-deps
+```
+
+### 3、安装MoGe
+
+```shell
+pip install git+https://github.com/microsoft/MoGe.git
+```
+
+### 4、克隆Sam_3d_body源码
+
+```shell
+git clone https://github.com/facebookresearch/sam-3d-body
+```
+
+### 5、运行例程
+
+```shell
+CUDA_VISIBLE_DEVICES=0 HF_ENDPOINT=https://hf-mirror.com python 09_sam3_body.py
+```
+
 
 
 ## 作者其他作品

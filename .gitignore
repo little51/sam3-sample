@@ -210,3 +210,4 @@ __marimo__/
 /*.mp4
 /images_auto_annotate_labels
 /yolo11x.pt
+/sam-3d-body
