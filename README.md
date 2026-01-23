@@ -143,6 +143,21 @@ git clone https://github.com/facebookresearch/sam-3d-body
 CUDA_VISIBLE_DEVICES=0 HF_ENDPOINT=https://hf-mirror.com python 09_sam3_body.py
 ```
 
+## 五、YOLO26-SAM3
+
+```shell
+# 创建虚拟环境
+conda create -n yolo26 python=3.12 -y
+# 激活虚拟环境
+conda activate yolo26
+# 安装最新YOLO库
+pip install -U ultralytics -i https://pypi.mirrors.ustc.edu.cn/simple
+# 重装PyTorch（仅Windows）
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
+# 运行YOLO26-SAM3测试程序
+python 10_sam3_yolo26.py
+```
+
 
 
 ## 作者其他作品
