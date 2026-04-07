@@ -158,6 +158,9 @@ pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https
 python 10_sam3_yolo26.py
 ```
 
+## 六、SAM3.1
+
+[sam3.1例程](https://github.com/little51/sam3-sample/blob/main/sam3.1.md)
 
 
 ## 作者其他作品
@@ -167,8 +170,13 @@ python 10_sam3_yolo26.py
 DINOv3训练示例：[https://github.com/little51/dinov3-train](https://github.com/little51/dinov3-train)
 DINOv3其他示例：[https://github.com/little51/dinov3-samples](https://github.com/little51/dinov3-samples)
 
-## 作者新书《大模型项目实战：多领域智能应用》和《大模型项目实战：Agent开发与应用》
+## 作者新书
+《大模型项目实战：多领域智能应用》
+《大模型项目实战：Agent开发与应用》
+《企业级DeepSeek实战：应用开发与模型训练》
+《构建自主AI：深入A2A协议的智能体开发》
 
-![图书](https://gitclone.com/download1/llm-dev/llm-dev.png)
-![图书](https://gitclone.com/download1/ai-agent/agent-dev1.png)
-
+![](https://gitclone.com/download1/ai-agent/agent-dev1.png)
+![](https://gitclone.com/download1/llm-dev/llm-dev.png)
+![](https://gitclone.com/download1/llm-dev/A2A.png)
+![](https://gitclone.com/download1/llm-dev/deepseek-dev.png)
