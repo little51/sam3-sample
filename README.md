@@ -1,5 +1,9 @@
 # Meta SAM 3 样例
 
+[作者新书：《视觉自监督模型DINOv3：原理、训练到部署》](https://github.com/little51/dinov3-course)
+
+![图书](https://5starsoft.com.cn/dinov3.jpg)
+
 ## 一、环境安装
 
 ### 1、Python虚拟环境
